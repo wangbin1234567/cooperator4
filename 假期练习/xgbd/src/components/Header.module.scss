@@ -1,0 +1,209 @@
+.head{
+    height: 3.34rem;
+    background: url(https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/img/top_headv3.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.jump{
+    width: 1.68rem;
+    height: .52rem;
+    background: url(https://mat1.gtimg.com/news/signin/v6/yiqing_more_icon.png);
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: .38rem;
+}
+.jump_zhuizong {
+    width: 1.68rem;
+    height: .52rem;
+    background: url(https://mat1.gtimg.com/news/signin/v6/yiqing_zhuizong_more.png);
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1.8rem;
+    top: .38rem;
+}
+.head .bottom {
+    display: flex;
+    justify-content: space-between;
+    line-height: .26rem;
+    height: .26rem;
+    font-size: .24rem;
+    color: #fff;
+    position: absolute;
+    left: .4rem;
+    right: .4rem;
+    bottom: .3rem;
+}
+.qs{
+    position: relative;
+    padding-right: .34rem;
+}
+.qs::before {
+    content: '.';
+    /* display: block; */
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: .24rem;
+    height: .24rem;
+    background: url(https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/img/icon_qs.png);
+    background-size: 100% 100%;
+}
+.timeNum {
+    padding: .29rem .4rem .29rem .4rem;
+    line-height: .26rem;
+    font-size: .24rem;
+    color: #222222;
+    position: relative;
+}
+.bottom {
+    color: #737373;
+    font-size: .24rem;
+    margin-top: .08rem;
+    display: flex;
+    justify-content: space-between;
+}
+.d {
+    padding-right: .12rem;
+    margin-right: .12rem;
+    position: relative;
+}
+.d span {
+    font-weight: 500;
+    color: #222;
+}
+.d em {
+    font-style: normal;
+}
+.recentNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .3rem;
+    position: relative;
+    z-index: 2;
+}
+.icbar {
+        width: 1.64rem;
+        margin-right: 0.04rem;
+        position: relative;
+        text-align: center;
+    }
+.add {
+    padding-top: .12rem;
+    color: #7C7C7C;
+    font-size: .2rem;
+    line-height: .24rem;
+    font-weight: 500;
+}
+.number {
+    font-size: .44rem;
+    margin-bottom: 0.08rem;
+    font-weight: 600;
+    padding-top: .12rem;
+}
+.text {
+    font-size: .24rem;
+    height: .54rem;
+    line-height: .54rem;
+    color: #222;
+    font-weight: 500;
+}
+.recentNumber .icbar:first-child .number, .recentNumber .icbar:first-child .add span{
+    color: #F55253;
+}
+.recentNumber .icbar:first-child{
+    background-color: #FDF1F1;
+}
+.recentNumber .icbar:first-child .text {
+    background-color: #FFE0E0;
+}
+.recentNumber .icbar:nth-child(2) .number, .recentNumber .icbar:nth-child(2) .add span{
+    color: #FF961E;
+}
+.recentNumber .icbar:nth-child(2){
+   background-color: #FFF7ED;
+}
+.recentNumber .icbar:nth-child(2) .text {
+    background-color: #FFEED9;
+}
+.recentNumber .icbar:nth-child(3) .number, .recentNumber .icbar:nth-child(3) .add span{
+    color: #178B50;
+}
+.recentNumber .icbar:nth-child(3){
+   background-color: #F1F8F4;
+}
+.recentNumber .icbar:nth-child(3) .text {
+    background-color: #DFEEE6;
+}
+.recentNumber .icbar:nth-child(4) .number, .recentNumber .icbar:nth-child(4) .add span{
+    color: #66666c;
+}
+.recentNumber .icbar:nth-child(4){
+   background-color: #F8F8F8;
+}
+.recentNumber .icbar:nth-child(4) .text {
+    background-color: #EEEEEE;
+}
+//左上
+.recentNumber .icbar:first-child{
+    border-radius: .12rem 0 0 .12rem;
+}
+//左下
+.recentNumber .icbar:first-child .text {
+    border-radius: 0 0 0 .12rem;
+}
+//右上
+.recentNumber .icbar:nth-child(4){
+    border-radius: 0 .12rem .12rem 0;
+}
+//右下
+.recentNumber .icbar:nth-child(4) .text {
+    border-radius: 0 0 .12rem 0;
+}
+.qt_enter {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .84rem;
+    text-align: center;
+    margin: 0 .4rem .1rem .4rem;
+}
+.qt_enter p {
+    width: 3.28rem;
+    height: .84rem;
+    line-height: .84rem;
+    border-radius: .12rem;
+    font-size: .28rem;
+    color: #222;
+    background-color: #EEF4FF;
+    font-weight: 300;
+}
+.qt_enter span {
+    display: inline-block;
+    padding: 0 0 0 .56rem;
+    position: relative;
+}
+.qt_enter span::before {
+    content: ".";
+    font-size: 0;
+    position: absolute;
+    display: block;
+    line-height: 0;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-size: 100% 100%;
+    width: .44rem;
+    height: .44rem;
+}
+.qt_enter .icon_plot::before {
+    background-image: url(https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/img/icon_plot.png);
+}
+.qt_enter .icon_train::before {
+    background-image: url(https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/img/icon_train.png);
+}

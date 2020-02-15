@@ -1,0 +1,144 @@
+:global #news {
+  position: relative;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+}
+
+:global .timeLine {
+  position: absolute;
+  height: calc(100% - 260px);
+  width: 45px;
+  /* top: 160px; */
+  top: 130px;
+  left: 0;
+  border-right: 1px solid #dddddd;
+}
+
+:global .titleWarp {
+  background: #ffffff;
+  padding-bottom: 8px;
+  padding-top: 58px;
+}
+
+:global .sectionTitle {
+  font-weight: 500;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  background: url(https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/img/smart.png) 20px center no-repeat;
+  background-size: 5px 25px;
+  padding: 0 35px;
+  color: #005dff;
+  position: relative;
+}
+
+:global .flexjinzhan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+:global .hotzhuizhong {
+  width: 84px;
+  height: 24px;
+  background: url(https://mat1.gtimg.com/news/signin/v6/zhuizong.png);
+  background-size: 100% 100%;
+  margin-right: 90px;
+}
+
+:global .timelineMore {
+  width: 102px;
+  height: 24px;
+  background: url(https://mat1.gtimg.com/news/signin/v6/zixunmore.png);
+  background-size: 100% 100%;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: block;
+}
+
+:global .timeLine {
+  position: absolute;
+  height: calc(100% - 260px);
+  width: 45px;
+  /* top: 160px; */
+  top: 260px;
+  left: 0;
+  border-right: 1px solid #dddddd;
+}
+
+:global .timeLine {
+  position: absolute;
+  height: calc(100% - 130px);
+  width: 23px;
+  /* top: 160px; */
+  top: 130px;
+  left: 0;
+  border-right: 1px solid #dddddd;
+}
+
+:global #news .singleNew {
+  font-size: 14px;
+  line-height: 23px;
+  padding: 20px 20px 0px 15px;
+  margin-left: 24px;
+  width: 315px;
+  position: relative;
+}
+
+:global #news .singleNew .timeIcon {
+  position: absolute;
+  left: -8px;
+  top: 22px;
+  background: url(https://puui.qpic.cn/vupload/0/1580094612259_xhuwv0n93di.png/0);
+  width: 14px;
+  height: 14px;
+  background-size: 100% 100%;
+}
+
+:global #news .singleNew .times {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #222;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+:global #news .singleNew .times .newest {
+  margin-left: 12px;
+  width: 30px;
+  height: 14px;
+  background: url(https://puui.qpic.cn/vupload/0/1580094612258_hlp94jy4c6v.png/0);
+  background-size: 100% 100%;
+}
+
+:global .news-box {
+  background: #fff;
+  border-radius: 6px;
+}
+
+:global #news .singleNew .title {
+  color: #222222;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 20px 20px 0 20px;
+  line-height: 1.5;
+}
+
+:global #news .singleNew .desc {
+  padding: 30px 20px;
+  line-height: 20px;
+  color: #737373;
+  font-weight: normal;
+}
+
+:global #news .singleNew .source {
+  color: #222222;
+  line-height: 14px;
+  padding: 0px 20px 20px 20px;
+  font-weight: normal;
+}
