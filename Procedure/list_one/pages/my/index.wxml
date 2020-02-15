@@ -1,0 +1,13 @@
+<view class="wrap">
+  <view class="A">
+    <image wx:for="{{columns[0]}}" src="{{item}}"  mode="widthFix" wx:key="{{item}}"/>
+  </view>
+  <view class="B">
+    <image wx:for="{{columns[1]}}" src="{{item}}"  mode="widthFix" wx:key="{{item}}"/>
+  </view>
+  <view class="C">
+    <image wx:for="{{columns[2]}}" src="{{item}}"  mode="widthFix" wx:key="{{item}}"/>
+  </view>
+
+  <button open-type="share" size="defaultSize" loading="loading" bindtap="defaultTap" hover-class="defaultTap">分享</button>
+</view>

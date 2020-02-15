@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="txt">
+      <text>中国现阶段人均寿命900个月</text>
+    </view>
+    <view class="years">
+      <text>{{year}}年{{month}}月至今{{distance}}多少个月</text>
+    </view>
+    <picker mode="date" fields="month" end="{{end}}" bindchange="bindDateChange">
+      <button>换一个日期</button>
+    </picker>
+    <button bindtap="clear">清除记录</button>
+    <view class="prog">
+      <progress color="#09BB07" percent="{{percent}}" stroke-width="60" show-info="{{true}}"/>
+    </view>
+  </view>
+</view>
