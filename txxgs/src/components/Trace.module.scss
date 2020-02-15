@@ -1,0 +1,107 @@
+.box{
+    position: relative;
+    margin-top: 1.2rem;
+    background: #f8f8f8;
+    box-sizing: border-box;
+    padding-bottom: .6rem;
+}
+.boxtitle{
+    background: #ffffff;
+}
+.h3{
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: .35rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: url('https://mat1.gtimg.com/news/images/inews/2020/feiyan/18/img/smart.png') .4rem center no-repeat;
+    padding: 0 .7rem;
+    color: #005dff;
+    position: relative;
+}
+.titleqq{
+    position: relative;
+}
+.hotzhuizhong{
+    width: 1.68rem;
+    height: .48rem;
+    background: url(https://mat1.gtimg.com/news/signin/v6/zhuizong.png);
+    background-size: 100% 100%;
+    margin-right: 1.94rem;
+    position: absolute;
+    position: absolute;
+    left: 2.6rem;
+    top: -0.73rem;
+}
+.timelineMore{
+    width: 2rem;
+    height: .47rem;
+    background: url(https://mat1.gtimg.com/news/signin/v6/zixunmore.png);
+    background-size: 100% 100%;
+    position: absolute;
+    right: -0.35rem;
+    top: -0.45rem;
+    transform: translate(0, -50%);
+    display: block;
+}
+.detailconcent{
+    width: 80%;
+    margin-left: 10%;   
+}
+.timesline{
+    position: absolute;
+    height: calc(110% - 260px);
+    width: .9rem;
+    left: -.45rem;
+    border-right: 1px solid #dddddd;
+}
+.detailNew{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #222;
+    margin-bottom: .3rem;
+    font-size: .28rem;
+    line-height: .28rem;
+    margin-top: .3rem;
+}
+.timeIcon{
+    position: absolute;
+    left: 0.38rem;
+    background: url(https://puui.qpic.cn/vupload/0/1580094612259_xhuwv0n93di.png/0);
+    width: .2rem;
+    height: .2rem;
+    background-size: 100% 100%;
+}
+.detailtime{
+    font-size: .28rem;
+    line-height: .28rem;
+    height: .28rem;
+    position: relative;
+    font-weight: 500;
+    color: #737373;
+}
+.fontsize{
+    background: #ffffff;
+    border-radius: .3rem;
+}
+.detailtitle{
+    color: #222222;
+    font-weight: 500;
+    font-size: .32rem;
+    padding: .4rem .4rem 0 .4rem;
+    line-height: 1.5;
+}
+.detaildesc{
+    padding: .3rem .4rem;
+    line-height: .4rem;
+    color: #737373;
+    font-weight: normal;
+}
+.detailsource{
+    color: #222222;
+    line-height: .28rem;
+    padding: 0px .4rem .4rem .4rem;
+    font-weight: normal;
+}
