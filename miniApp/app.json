@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/date/date",
+    "pages/day/day",
+    "pages/meditation/meditation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#4A4A4A"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./static/images/home.png",
+        "selectedIconPath": "./static/images/home-active.png"
+      },
+      {
+        "pagePath": "pages/date/date",
+        "text": "年月日",
+        "iconPath": "./static/images/find.png",
+        "selectedIconPath": "./static/images/find-active.png"
+      },
+      {
+        "pagePath": "pages/day/day",
+        "text": "日子",
+        "iconPath": "./static/images/user-list.png",
+        "selectedIconPath": "./static/images/user-list-active.png"
+      },
+      {
+        "pagePath": "pages/meditation/meditation",
+        "text": "静思",
+        "iconPath": "./static/images/find.png",
+        "selectedIconPath": "./static/images/find-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "./static/images/me.png",
+        "selectedIconPath": "./static/images/me-active.png"
+      }
+    ]
+  }
+}

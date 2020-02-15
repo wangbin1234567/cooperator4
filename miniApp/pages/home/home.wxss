@@ -1,0 +1,73 @@
+/* pages/home/home.wxss */
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.timer{
+  width: 300px;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.picker{
+  font-size: 12px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 5px;
+}
+.btn{
+  margin-top: 20px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 5px;
+}
+.section{
+  display: flex;
+}
+.bottom{
+  width: 120px;
+  height: 260px;
+  background: #eee;
+  border-radius: 10px;
+  /* position: relative; */
+  overflow: hidden;
+}
+.bottle{
+  width: 40px;
+  height: 10px;
+  background: #eee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 40px;
+  }
+.schedule{
+  /* position: absolute;
+  left: 0;
+  top: 100px; */
+  /* margin-top: 100px; */
+  line-height: 260px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background: #0f0;
+  text-align: center;
+  color: #fff;
+}
+.footer{
+  width: 300px;
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+}

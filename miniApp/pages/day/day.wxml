@@ -1,0 +1,22 @@
+<!--pages/day/day.wxml-->
+<!-- <text>pages/day/day.wxml</text> -->
+<view class="wrap">
+<view class="header">时间差计算器</view>
+<view class="section">
+  <view class="section__title">日期与日期间的相隔时间</view>
+  <picker mode="date" value="{{date}}" start="1949-10-01" end="2020-12-31" bindchange="bindDateChange">
+    <view class="picker">
+      开始日期：{{date}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <picker mode="date" value="{{date1}}" start="1949-10-01" end="2020-12-31" bindchange="bindDateChanges">
+    <view class="picker">
+      结束日期：{{date1}}
+    </view>
+  </picker>
+</view>
+<text bind:touchend="handleTouch" class="btn">计算</text>
+<view wx:if="{{day}}" class="footer">相差{{day}}天</view>
+</view>

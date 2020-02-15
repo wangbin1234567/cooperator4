@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<view class="box">
+ <text class="title">中国现阶段人均寿命 900 个月</text>
+ <text class="timer" wx:if="{{date}}">{{date}}至今 {{monthCounts}} 个月</text>
+ <view class="section">
+  <picker mode="date" value="{{date}}" start="1949" end="2020" fields="month" bindchange="bindDateChange">
+    <view class="picker">
+      {{content}}
+    </view>
+  </picker>
+  <view class="btn" wx:if="{{clear}}" bind:touchend="handleTouch">
+     {{clear}}
+  </view>
+</view>
+<view class="bottle"></view>
+<view class="bottom">
+ <view class="schedule" style="margin-top: {{top}}px; border-top-left-radius: {{left}}px; border-top-right-radius: {{right}}px; line-height: {{lineHeight}}px;">{{percentage}}</view>
+</view>
+<text class="footer">奋斗没有终点，任何时候都是一个起点</text>
+</view>
