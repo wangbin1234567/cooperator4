@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="wrap">
+    <view class="{{currentData == 0 ? 'active' : ''}}" data-current="0" bindtap="changeTab">
+      <text>目标</text>
+    </view>
+    <view class="{{currentData == 1 ? 'active' : ''}}" data-current="1" bindtap="changeTab">
+      <text>习惯</text>
+    </view>
+    <view class="{{currentData == 2 ? 'active' : ''}}" data-current="2" bindtap="changeTab">
+      <text>手记</text>
+    </view>
+  </view>
+</view>
+<view class="first-one" hidden="{{currentData != 0}}">
+  <view class="first-ones">
+    <text>看电影</text>
+    <text>打保龄球</text>
+    <text>玩射箭</text>
+    <text>练出几首自己的经典曲目</text>
+  </view>
+</view>
+<view hidden="{{currentData != 1}}">习惯</view>
+<view hidden="{{currentData != 2}}">手记</view>
