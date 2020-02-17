@@ -1,0 +1,23 @@
+<view class="home">
+  <view class="title">
+    <navigator url="/pages/target/target">目标</navigator>
+    <navigator url="/pages/habit/habit">习惯</navigator>
+    <navigator url="/pages/take/take">手记</navigator>
+  </view>
+  <view class="center">
+    <view class="content">
+      <view class="cont-title">
+        <text>多彩的周末计划</text>
+        <text>2/6</text>
+      </view>
+      <view class="target-list" wx:for="{{list}}">
+        <text>{{item.number}}</text>
+        <text>{{item.text}}</text>
+        <text>{{item.face}}</text>
+      </view>
+    </view>   
+  </view>
+  <view class="btn">
+   <text>+</text>
+  </view>
+</view>

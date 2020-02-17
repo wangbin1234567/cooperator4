@@ -1,0 +1,12 @@
+<!--pages/target/target.wxml-->
+<view class="target-box">
+  <view class="title">
+    <input placeholder="输入你的目标" maxlength="20"></input>
+    <text>创建</text>
+    <text>批量导入</text>
+  </view>
+  <view class="list" wx:for="{{list}}">
+   <text>{{item}}</text>
+   <text>+</text>
+  </view>
+</view>

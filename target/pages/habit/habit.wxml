@@ -1,0 +1,11 @@
+<!--pages/habit/habit.wxml-->
+<view class="target-box">
+  <view class="title">
+    <input placeholder="输入你的习惯" maxlength="20"></input>
+    <text>创建</text>
+  </view>
+  <view class="list" wx:for="{{list}}">
+   <text>{{item}}</text>
+   <text>+</text>
+  </view>
+</view>
