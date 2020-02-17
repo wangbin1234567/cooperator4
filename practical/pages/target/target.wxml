@@ -1,0 +1,12 @@
+<!--pages/target/target.wxml-->
+<!-- <text>pages/target/target.wxml</text> -->
+<view class="wraps">
+<view class="ipt">
+<input placeholder="输入你的目标"/><text>创建</text>
+</view>
+<view class="list">
+<view class="cons">
+  <view>体验一次VR +</view>
+</view>
+</view>
+</view>

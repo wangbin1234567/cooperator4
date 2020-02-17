@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<view class="wrap">
+<view class="header">
+ <text>目标</text>
+ <text>习惯</text>
+ <text>手记</text>
+</view>
+<view class="main">
+ <view class="box">
+ <text class="title">多彩周末体验计划 1/1</text>
+ <view class="contain">1 看一场私人电影 V</view>
+ </view>
+</view>
+<text class="btn">+</text>
+</view>
