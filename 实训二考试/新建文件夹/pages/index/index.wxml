@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="containers">
+  <view>
+  <view>多彩周末什么计划</view>
+    <view class="arrItem containers">
+    <view wx:for="{{arr}}" class="contitem"> {{item}} </view></view>
+  </view>
+  <view class="addcont" bindtap="tapAdd">+</view>
+</view>
