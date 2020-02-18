@@ -26,7 +26,7 @@ Page({
       },{
         title: '我的手记',
         tain: [{
-          con: '三月份找工作'
+          con: '我爱学习，学习使我快乐'
         }]
       }],
      lists: {},
@@ -36,25 +36,34 @@ Page({
     }, {
       title: '习惯',
       lists: ['看书一小时', '看TED']
-    }]
+    },{
+        title: '手记',
+        lists: ['保持一颗快乐的心', '不忘初心，方得始终']
+    }],
+    dtr: '目标'
   },
   bindViewTap: function () {
-    let drr=this.data.str.filter((item,index)=>item.title=='目标')
+    let drrs = this.data.dtr
+    let drr=this.data.str.filter((item,index)=>item.title==drrs)
+    let tests = drr[0].lists
+    let test=JSON.stringify(tests)
     wx.navigateTo({
-      url: '../target/target',
-      success: function (res) {
-        // 通过eventChannel向被打开页面传送数据
-        let test = drr[0].lists
-        res.eventChannel.emit('acceptDataFromOpenerPage', test )
-      }
+      url: '../target/target?test='+test,
+      // success: function (res) {
+      //   // 通过eventChannel向被打开页面传送数据
+      //   let test = drr[0].lists
+      //   res.eventChannel.emit('acceptDataFromOpenerPage', test )
+      // }
     })
   },
   handleIndex: function (event) {
     let index = event.currentTarget.dataset['index'];
     let arr = this.data.list[index]
+    let dtrs = this.data.titleList[index]
     this.setData({
       curIndex: index,
-      lists: arr
+      lists: arr,
+      dtr: dtrs
     })
   },
   /**
@@ -64,6 +73,10 @@ Page({
     let arr = this.data.list[0]
     this.setData({
       lists: arr
+    })
+    wx.setStorage({
+      key: "key",
+      data: ""
     })
   },
 
@@ -78,7 +91,50 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let that=this
+    wx.getStorage({
+      key: 'key',
+      success(res) {
+        console.log(res.data)
+        if (!res.data) {
+           return
+         }
+        let obj={
+          flag: false,
+          con: res.data
+        }
+        let obj1 = {
+          fag: true,
+          cun: 0,
+          con: res.data
+        }
+        let obj2 = {
+          con: res.data
+        }
+        if (that.data.dtr=='目标'){
+          let arrs = that.data.list[0].tain
+          let drrs = that.data.list[0].tain.push(obj)
+          that.setData({
+            arrs: drrs
+          })
+        }
+        if (that.data.dtr == '习惯') {
+          let arrs = that.data.list[1].tain
+          let drrs = that.data.list[1].tain.push(obj1)
+          that.setData({
+            arrs: drrs
+          })
+        }
+        if (that.data.dtr == '手记') {
+          let arrs = that.data.list[2].tain
+          let drrs = that.data.list[2].tain.push(obj2)
+          that.setData({
+            arrs: drrs
+          })
+        }
+        that.onLoad()
+      }
+    })
   },
 
   /**

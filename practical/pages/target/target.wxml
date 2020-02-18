@@ -6,7 +6,7 @@
 </view>
 <view class="list">
 <view class="cons">
-  <view wx:for="{{lists}}">{{item}} +</view>
+  <view wx:for="{{lists}}" wx:key="{{index}}">{{item}} <text bindtap="bindItemTap" data-item="{{item}}">+</text></view>
 </view>
 </view>
 </view>

@@ -7,19 +7,28 @@ Page({
   data: {
     lists: []
   },
-
+  bindItemTap: function (event) {
+    let item = event.currentTarget.dataset['item'];
+    wx.setStorage({
+      key: "key",
+      data: item
+    })
+  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    const eventChannel = this.getOpenerEventChannel()
-    // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
-    let dts=eventChannel.on('acceptDataFromOpenerPage', function (data) {
-        return data
-    })
+    let test = options.test;
+    let info = JSON.parse(test);
     this.setData({
-      lists: dts
+      lists: info
     })
+    // const eventChannel = this.getOpenerEventChannel()
+    // // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
+    // eventChannel.on('acceptDataFromOpenerPage', function (data) {
+    //    console.log(data)
+    // })
   },
 
   /**
