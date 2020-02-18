@@ -8,7 +8,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "有爱清单",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -20,10 +20,6 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页"
-      },
-      {
-        "pagePath": "pages/target/target",
-        "text": "其他"
       }
     ]
   },

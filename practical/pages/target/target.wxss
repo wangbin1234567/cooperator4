@@ -1,7 +1,7 @@
 /* pages/target/target.wxss */
 .wraps{
   width: 100%;
-  height: 1110rpx;
+  height: 1200rpx;
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +16,6 @@
   padding: 0 30rpx;
 }
 .cons{
-  height: 100%;
   background: #fff;
   padding: 20rpx 50rpx;
 }
@@ -27,4 +26,5 @@
   background: #eee;
   border-radius: 10rpx;
   margin-bottom: 20rpx;
+  padding: 0 20rpx;
 }

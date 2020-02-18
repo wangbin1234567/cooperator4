@@ -2,15 +2,19 @@
 <!-- <text>pages/home/home.wxml</text> -->
 <view class="wrap">
 <view class="header">
- <text>目标</text>
- <text>习惯</text>
- <text>手记</text>
+ <text 
+ wx:for="{{titleList}}" 
+ wx:key="{{index}}"
+ class="{{curIndex==index? 'active':''}}"
+ bindtap="handleIndex" data-index="{{index}}"
+ >{{item}}</text>
 </view>
-<view class="main">
+<view class="main"> 
+<text class="title">多彩周末体验计划 1/{{lists.length}}</text>
  <view class="box">
- <text class="title">多彩周末体验计划 1/1</text>
- <view class="contain">1 看一场私人电影 V</view>
+ <view wx:for="{{lists}}">{{index+1}} {{item.con}} {{item.flag?'V':''}}
+ </view>
  </view>
 </view>
-<text class="btn">+</text>
+<text class="btn" bindtap="bindViewTap">+</text>
 </view>
