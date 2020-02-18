@@ -10,9 +10,10 @@
  >{{item}}</text>
 </view>
 <view class="main"> 
-<text class="title">多彩周末体验计划 1/{{lists.length}}</text>
+<text class="title">{{lists.title}} 1/{{lists.tain.length}}</text>
  <view class="box">
- <view wx:for="{{lists}}">{{index+1}} {{item.con}} {{item.flag?'V':''}}
+ <view wx:for="{{lists.tain}}" wx:key="{{index}}">{{index+1}} {{item.con}} {{item.flag?'V':''}}
+ {{item.fag?'已坚持':''}} {{item.cun}} {{item.fag?'天':''}}
  </view>
  </view>
 </view>
