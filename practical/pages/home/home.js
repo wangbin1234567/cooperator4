@@ -70,10 +70,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let arr = this.data.list[0]
-    this.setData({
-      lists: arr
-    })
+    if (this.data.dtr == '目标') {
+      let arr = this.data.list[0]
+      this.setData({
+        lists: arr
+      })
+    }
+    if (this.data.dtr == '习惯') {
+      let arr = this.data.list[1]
+      this.setData({
+        lists: arr
+      })
+    }
+    if (this.data.dtr == '手记') {
+      let arr = this.data.list[2]
+      this.setData({
+        lists: arr
+      })
+    }
     wx.setStorage({
       key: "key",
       data: ""
