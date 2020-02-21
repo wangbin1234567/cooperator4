@@ -30,6 +30,7 @@ class App extends Component {
       'pages/index/index',
       'pages/map/index',
       'pages/sign/add/index',
+      'pages/sign/interview/index',
       'pages/sign/location/index'
     ],
     window: {
