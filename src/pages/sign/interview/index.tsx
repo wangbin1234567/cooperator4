@@ -94,10 +94,10 @@ class SignList extends Component<{}, PageState> {
     let {list} = this.props;
     console.log(list,'list');
     
-    let carIndex1=this.state.currentIndex==0 ? 'block' : 'none';
-    let carIndex2=this.state.currentIndex==1 ? 'block' : 'none';
-    let carIndex3=this.state.currentIndex==2 ? 'block' : 'none';
-    let carindex4=this.state.currentIndex==3 ? 'block' : 'none';
+    let isBox1Show=this.state.currentIndex==0 ? 'block' : 'none';
+    let isbox2Show=this.state.currentIndex==1 ? 'block' : 'none';
+    let isbox3Show=this.state.currentIndex==2 ? 'block' : 'none';
+    let isbox4Show=this.state.currentIndex==3 ? 'block' : 'none';
 
     return (
       <View className='wrap'>
@@ -105,16 +105,24 @@ class SignList extends Component<{}, PageState> {
           {
             this.state.tabList.map((item,index)=>{
             let tabStyle=item.id==this.state.currentIndex ? 'active' : '';
-            return <Text onClick={()=>this.changColr(index)} className={tabStyle}>{item.text}</Text>
+            return <Text key={index} onClick={()=>this.changColr(index)} className={tabStyle}>{item.text}</Text>
             })
           }
           </View>
           <View className="hr"></View>
           <View className="newsList">
-                    <View className={carIndex1}>未打卡</View>  
-                    <View className={carIndex2}>已打卡</View>
-                    <View className={carIndex3}>已放弃</View>
-                    <View className={carindex4}>全部</View>
+                    <View className={isBox1Show} >
+                     未打卡
+                    </View>  
+                    <View className={isbox2Show}>
+                    已打卡
+                    </View>
+                    <View className={isbox3Show}>
+                      已放弃
+                    </View>
+                    <View className={isbox4Show}>
+                      全部
+                    </View>
           </View>
       </View>
     )
