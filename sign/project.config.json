@@ -53,6 +53,14 @@
 					"id": -1,
 					"name": "面试列表",
 					"pathName": "pages/sign/list/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "面试详情页面",
+					"pathName": "pages/sign/detail/index",
+					"query": "id=3315",
 					"scene": null
 				}
 			]

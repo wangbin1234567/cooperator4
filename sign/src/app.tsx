@@ -31,13 +31,25 @@ class App extends Component {
       'pages/map/index',
       'pages/sign/add/index',
       'pages/sign/list/index',
-      'pages/sign/location/index'
+      'pages/sign/location/index',
+      'pages/sign/detail/index'
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    permission: {
+        "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序定位"
+        }
+    },
+    plugins: {
+      "routePlan": {
+        "version": "1.0.5",
+        "provider": "wx50b5593e81dd937a"
+      }
     }
   }
 

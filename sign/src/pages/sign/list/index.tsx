@@ -4,6 +4,7 @@ import { View, Text, Input, Button, Form, Icon  } from '@tarojs/components'
 import './index.scss'
 import { connect } from '@tarojs/redux'
 import {getSignListAction} from '../../../actions/sign'
+import { ITouchEvent } from '@tarojs/components/types/common'
 
 
 
@@ -29,6 +30,8 @@ interface SignList {
   props: IProps;
 }
 
+const headers = ['未开始','已开始','已放弃','全部']
+
 @connect(state=>{
   return {
     list: state.sign.list
@@ -52,7 +55,8 @@ class SignList extends Component<{}, PageState> {
   }
 
   componentDidShow () {
-    let params = {...this.state};
+    let {page, status, pageSize} = this.state;
+    let params = {page, status, pageSize};
     if (params.status === 2){
       delete params.status;
     }
@@ -61,11 +65,34 @@ class SignList extends Component<{}, PageState> {
 
   componentDidHide () { }
 
+  changeStatus = (e:ITouchEvent)=>{
+    this.setState({
+      status: e.target.dataset.status
+    })
+  }
+
+  goDetail = (e: ITouchEvent)=>{
+    wx.navigateTo({url:'/pages/sign/detail/index?id='+e.currentTarget.dataset.id});
+  }
 
   render () {
+    console.log('list...', this.props.list);
     return (
       <View className='wrap'>
-
+        <View className='header'>{
+          headers.map((item, index)=>{
+            return <Text key={index} data-status={index-1} className={index-1 == this.state.status?'active':''} onClick={this.changeStatus}>{item}</Text>
+          })
+        }</View>
+        <View className="list">{
+          this.props.list.map((item)=>{
+            return <View onClick={this.goDetail} data-id={item.id}>
+              <Text>{item.company}</Text>
+              <Text>{JSON.parse(item.address).address}</Text>
+              <Text>{new Date(item.start_time).toString()}</Text>
+            </View>
+          })
+        }</View>
       </View>
     )
   }
