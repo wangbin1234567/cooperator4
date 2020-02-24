@@ -1,0 +1,40 @@
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .company{
+   font-size: 35rpx;
+   font-weight: 600;
+ }
+ .start{
+   font-size: 25rpx;
+   background: #eee;
+   color: #666;
+ }
+ .footer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 20rpx;
+ }
+ .time{
+   font-size: 30rpx;
+ }
+ .remind{
+   background: antiquewhite;
+   color: tomato;
+   font-size: 30rpx;
+ }
+ .contain{
+   flex: 1;
+   overflow-y: auto;
+ }
+ .active{
+   color: steelblue;
+   border-bottom: 2rpx solid steelblue;
+ }
+ .main{
+   border-top: 15rpx solid #eee;
+   padding: 30rpx 30rpx;
+ }

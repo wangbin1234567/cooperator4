@@ -1,0 +1,47 @@
+.operate {
+  display: flex;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-top: 70rpx;
+  padding: 0 30rpx;
+}
+
+.operate text {
+  flex: 1;
+  text-align: center;
+}
+
+.operate text:first-child {
+  background: steelblue;
+  color: #fff;
+  border-radius: 10rpx;
+}
+
+.operate text:last-child {
+  background: tomato;
+  color: #fff;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+
+.top {
+  padding: 0 0 0 30rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.top view:not(:last-child) {
+  border-bottom: 1rpx solid #eee;
+}
+
+.top view {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.active {
+  display: block;
+}
+
+.disActive {
+  display: none;
+}
